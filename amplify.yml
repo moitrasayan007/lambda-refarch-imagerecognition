@@ -34,6 +34,7 @@ frontend:
         - npm install
         - npm install semantic-ui-react
         - npm install @aws-amplify/cache
+        - npm install mapbox-gl
         - npm install aws-amplify-react
         - npm install styled-components
         - npm install react-slick
