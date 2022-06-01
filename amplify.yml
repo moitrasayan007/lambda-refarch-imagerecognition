@@ -32,6 +32,12 @@ frontend:
       commands:
         - cd src/react-frontend
         - npm install
+        - npm install semantic-ui-react
+        - npm install aws-amplify-react
+        - npm install styled-components
+        - npm install react-slick
+        - npm install react-carousel-slider
+        - npm install slick-carousel
     build:
       commands:
         - npm run build
