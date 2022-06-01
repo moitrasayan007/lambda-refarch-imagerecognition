@@ -36,7 +36,7 @@ deploy: ##=> Deploy services
 		  GraphQLEndPoint=${APPSYNC_URL} \
 		  GraphQLAPIId=${GRAPHQL_API_ID} \
 		  Stage=${AWS_BRANCH} \
-     	 --no-fail-on-empty-changeset
+		--no-fail-on-empty-changeset
 
 #############
 #  Helpers  #
@@ -46,7 +46,7 @@ _install_os_packages:
 	$(info [*] Installing jq...)
 	yum install jq -y
 	$(info [*] Upgrading Python SAM CLI and CloudFormation linter to the latest version...)
-	python3 -m pip install --upgrade --user cfn-lint aws-sam-cli
+	python3 -m pip install --upgrade --user cfn-lint aws-sam-cli jinja2
 
 
 define HELP_MESSAGE
