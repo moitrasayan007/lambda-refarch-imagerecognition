@@ -21,7 +21,7 @@ deploy: ##=> Deploy services
 #	cd ../extract-image-metadata && npm install && \
 #	cd ../store-image-metadata && npm install && \
 
-	cd cloudformation/ && \
+#	cd cloudformation/ && \
  	sam build --template ${TEMPLATE_NAME}.serverless.yaml  && \
 	sam package \
 		  --s3-bucket ${DEPLOYMENT_BUCKET_NAME} \
